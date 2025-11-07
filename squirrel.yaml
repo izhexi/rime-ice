@@ -35,8 +35,8 @@ app_options:
 
 style:
   # 选择皮肤，亮色与暗色主题
-  color_scheme: nord
-  color_scheme_dark: nord
+  color_scheme: my_light
+  color_scheme_dark: my_dark
 
   # 以下是预设选项。如果皮肤没写，则使用这些属性；如果皮肤写了，使用皮肤的。
 
@@ -439,3 +439,70 @@ preset_color_schemes:
     hilited_candidate_label_color: 0xCC8947 #Lab 55 ,-10,-45
     hilited_comment_text_color: 0x289989    #Lab 60 ,-20, 65
     hilited_text_color: 0xBE706D            #Lab 50 , 15,-45
+
+  my_light:
+    name: "扁平明／Flat Light"
+    font_face: "PingFangSC"          # 字体及大小
+    font_point: 16
+    label_font_face: "PingFangSC"    # 序号字体及大小
+    label_font_point: 12
+    comment_font_face: "PingFangSC"  # 注字体及大小
+    comment_font_point: 16
+    candidate_format: "%c\u2005%@\u2005" # 编号 %c 和候选词 %@ 前后的空间
+    candidate_list_layout: linear   # 候选排布：层叠 stacked | 行 linear
+    text_orientation: horizontal    # 行文向： 横 horizontal | 纵 vertical
+    translucency: true
+    mutual_exclusive: true
+    corner_radius: 15.0
+    hilited_corner_radius: 13.0
+    border_height: -5.0
+    border_width: -5.0
+    line_spacing: 4.0
+    alpha: 1
+    shadow_size: 1.0
+    color_space: display_p3
+    back_color: 0x00FFFFFF
+    candidate_text_color: 0xB3000000
+    comment_text_color: 0x80333333
+    label_color: 0xBB333333
+    hilited_candidate_back_color: 0xDDFFFFFF
+    hilited_candidate_text_color: 0x000000
+    hilited_comment_text_color: 0xBF333333
+    hilited_candidate_label_color: 0x000000
+    # preedit_back_color: 0x1A000000
+    text_color: 0xBF323232
+    hilited_text_color: 0xBF1A1A1A
+  my_dark:
+    name: "扁平暗／Flat Dark"
+    font_face: "PingFangSC"          # 字体及大小
+    font_point: 16
+    label_font_face: "PingFangSC"    # 序号字体及大小
+    label_font_point: 12
+    comment_font_face: "PingFangSC"  # 注字体及大小
+    comment_font_point: 16
+    candidate_format: "%c\u2005%@\u2005" # 编号 %c 和候选词 %@ 前后的空间
+    candidate_list_layout: linear   # 候选排布：层叠 stacked | 行 linear
+    text_orientation: horizontal    # 行文向： 横 horizontal | 纵 vertical
+    translucency: true
+    mutual_exclusive: false
+    corner_radius: 15.0
+    hilited_corner_radius: 13.0
+    border_height: -5.0
+    border_width: -5.0
+    line_spacing: 4.0
+    alpha: 100
+    shadow_size: 1.0
+    color_space: display_p3
+    # --- 以下为暗色模式调整 ---
+    back_color: 0x00000000                     # 半透明深灰色背景
+    candidate_text_color: 0xE6FFFFFF          # 浅色候选文字
+    comment_text_color: 0x80BBBBBB            # 浅灰色注释文字
+    label_color: 0xBBBBBBBB                   # 浅灰色序号
+    hilited_candidate_back_color: 0xDDD75A00 # 略深的半透明高亮背景
+    hilited_candidate_text_color: 0xFFFFFF    # 白色高亮候选文字
+    hilited_comment_text_color: 0xBFBBBBBB    # 浅灰色高亮注释文字
+    hilited_candidate_label_color: 0xFFFFFF   # 白色高亮序号
+    # preedit_back_color: 0x1A000000            # 半透明深色预编辑背景
+    text_color: 0xBFCCCCCC                    # 浅灰色预编辑文字
+    hilited_text_color: 0xBF999999            # 略深的高亮预编辑文字
+    # --- 暗色模式调整结束 ---
